@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Password Generator</title>  
+        <link rel="stylesheet"  href="style.css">
+        <script src="script.js"></script>    
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Generate a <br> <span>Random <span>Password !</span></span></h1>
+            <div class="display">
+                <input type="text" id="password" placeholder="password">
+                <img src="images/copy.svg" onclick="copyPassword()">
+
+            </div>
+            <div class="button"> 
+                <button onclick="generatePassword () "><img src="images\settings.png"> Generate Password </button>
+            </div>
+        </div>
+
+        <script>
+
+            
+                const textPassword = document.getElementById("password");
+                const length = 12;
+
+                const UpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                const LowerCase = "abcdefghijklmnopqrstuvwxyz";
+                const number = "0123456789";
+                const symbol = "!@#$%^&*()";
+
+                const chars = UpperCase + LowerCase + number + symbol;
+
+                function generatePassword() {
+                    let password = "";
+                    password += UpperCase[Math.floor(Math.random() * UpperCase.length)];
+                    password += LowerCase[Math.floor(Math.random() * LowerCase.length)];
+                    password += number[Math.floor(Math.random() * number.length)];
+                    password += symbol[Math.floor(Math.random() * symbol.length)];
+
+                    while (length > password.length) {
+                        password += chars[Math.floor(Math.random() * chars.length)];
+                    }
+
+                    textPassword.value = password;
+                }
+
+                function copyPassword(){
+
+                    textPassword.select();
+                    document.execCommand("copy");
+                }
+        </script>
+
+        <!---- Created by watermark  --->
+        <div class="createdBy">
+             Created by <a style="text-decoration: none "  href ="cynos28.com"> &nbsp; Cynos28 </a>
+        </div>        
+    </body>
+
+</html>

@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+
+    background-color:#092635;
+    color: rgb(254, 254, 254);
+
+}
+
+.container{
+
+    margin: 12%;
+    width:90%;
+    max-width: fit-content;
+}
+
+
+.display{
+    width: 130%;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 18px 20px  ;
+    
+
+
+}
+
+h1{
+    letter-spacing: 1.18px;
+}
+
+
+.container h1 span span{
+    color: #F8A427;
+   
+}
+
+.container h1 span {
+
+    border-bottom:  3px solid #F8A427;
+    padding-bottom: 4px;
+}
+
+.display img{
+    width: 30px;
+    cursor: pointer;
+    
+    
+}
+
+.display input{
+
+    border: 0ch;
+    outline: 0ch;
+    font-size: 20px;
+    background-color:aliceblue;
+    
+    
+}
+
+.container button img{
+
+    width: 25px;
+    margin-right: 10px;
+}
+.container button{
+    background-color: #F8A427;
+    color: rgb(246, 246, 246);
+    border-radius: 5px;
+    padding: 10px  10px;
+    border: 0cap;
+    outline: 0ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400px;
+    cursor: pointer;
+    font-size: medium;
+
+}
+
+button:hover {
+    background-color:#F8A427;
+    box-shadow: 0 0 0 5px #f5aa14ce;
+    color: #fff;
+  }
+
+
+  /* Created by watermark */
+  .createdBy {
+
+    color: aliceblue;
+    font-size: small;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+
+  } 
+
+  .createdBy a {
+
+    color: aliceblue;
+
+  }
+
+  .createdBy a:hover {
+
+    color: rgb(24, 126, 216);
+
+  }
